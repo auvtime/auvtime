@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	//设置当前时间
+	//璁剧疆褰撳墠鏃堕棿
 	setInterval(function() {
 		var hours = new Date().getHours();
 		var mins = new Date().getMinutes();
