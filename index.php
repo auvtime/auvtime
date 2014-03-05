@@ -8,12 +8,13 @@
 	<script src="js/functions.js"></script>
 	<script src="js/lifeTime.js"></script>
 	<meta http-equiv="content-type" content="text/html; charset=gb2312" />
-	<title>auvtime</title>
+	<title>光阴故事--auvtime.com</title>
 </head>
 <?php
 	$username="u199488573_auvt";
 	$userpass="auvtime";
-	$dbhost="localhost";
+	//$dbhost="localhost";
+	$dbhost="mysql.yupage.com";
 	$dbdatabase="u199488573_auvt";
 	
 	$pdo = new PDO("mysql:host=".$dbhost.";dbname=u199488573_auvt",$username,$userpass);
@@ -122,8 +123,8 @@
 					<div class="logo">
 						<img src="images/auvtime-logo.png">
 						<div class="companyNameAndWebsite">
-							<span class="companyName orange">光阴故事</span>
-							<a href="http://auvtime.com" class="website orange"><span>auvtime</span></a>
+							<span class="auvtime companyName orange">光阴故事</span>
+							<a href="http://auvtime.com" class="auvtime website orange"><span>auvtime<font color="gray">.com</font></span></a>
 						</div>
 					</div>
 					<div class="name">

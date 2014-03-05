@@ -6,11 +6,9 @@
 	height: 500px;
 	width: 100%;
 }
-.logo{
-	width:1000px;
-}
-.logo a span{
-	font-size: 80px;
+#lifeTime div.logo{
+	height: 100px;
+    margin: 10px 10px 10px 0;
 }
 .logo img{
 	height:80px;
@@ -20,12 +18,23 @@
 	height:80px;
 	float:left;
 }
-.companyNameAndWebsite .companyName,.companyNameAndWebsite .website{
-	height:50%;
+.auvtime{
+	float: left;
+    height: 50%;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    width: 100%;
+}
+.companyNameAndWebsite span.companyName{
+	font-size:36px;
+}
+.companyNameAndWebsite a.website{
+	font-size:25px;
 }
 #lifeTime div.name{
 	border: 1px solid #2B82AD;
 	border-radius:20px;
+	clear:both;
     margin: 20px 0;
     padding: 25px 10px 25px 20px;
 }
@@ -35,6 +44,7 @@
 #lifeTime div.lifeLength{
 	border: 1px solid #2B82AD;
 	border-radius:20px;
+	clear:both;
     margin: 20px 0;
     padding: 25px 10px 25px 20px;
 }
