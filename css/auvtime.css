@@ -1,0 +1,53 @@
+@CHARSET "UTF-8";
+.pagewrap{
+	background:url("../images/auv-bg.jpg") repeat-x scroll left top rgba(0, 0, 0, 0);
+}
+#lifeTime{
+	height: 500px;
+	width: 100%;
+}
+.logo{
+	width:1000px;
+}
+.logo a span{
+	font-size: 80px;
+}
+.logo img{
+	height:80px;
+	float:left;
+}
+.companyNameAndWebsite{
+	height:80px;
+	float:left;
+}
+.companyNameAndWebsite .companyName,.companyNameAndWebsite .website{
+	height:50%;
+}
+#lifeTime div.name{
+	border: 1px solid #2B82AD;
+	border-radius:20px;
+    margin: 20px 0;
+    padding: 25px 10px 25px 20px;
+}
+#lifeTime div.name span{
+	font-size:40px;
+}
+#lifeTime div.lifeLength{
+	border: 1px solid #2B82AD;
+	border-radius:20px;
+    margin: 20px 0;
+    padding: 25px 10px 25px 20px;
+}
+#lifeTime div.lifeLength span{
+	font-size:40px;
+}
+
+#nowTime{
+	display: inline-block;
+    height: 50px;
+    margin-left:450px;
+}
+
+.nav-item a{
+	font-size:35px;
+}
