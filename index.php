@@ -13,8 +13,8 @@
 <?php
 	$username="u199488573_auvt";
 	$userpass="auvtime";
-	//$dbhost="localhost";
-	$dbhost="mysql.yupage.com";
+	$dbhost="localhost";
+	//$dbhost="mysql.yupage.com";
 	$dbdatabase="u199488573_auvt";
 	
 	$pdo = new PDO("mysql:host=".$dbhost.";dbname=u199488573_auvt",$username,$userpass);
