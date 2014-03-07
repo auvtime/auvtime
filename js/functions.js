@@ -1,5 +1,5 @@
 /**
- * ²ÎÊı£ºÊı×Ö ÓÃÔÚÊ±¼äµÈº¯ÊıÖĞ£¬µ±´«µİµÄ²ÎÊıĞ¡ÓÚ10µÄÊ±ºò£¬¸ø¸Ã²ÎÊıÇ°±ßÌí¼Ó0²¢·µ»Ø
+ * å‚æ•°ï¼šæ•°å­— ç”¨åœ¨æ—¶é—´ç­‰å‡½æ•°ä¸­ï¼Œå½“ä¼ é€’çš„å‚æ•°å°äº10çš„æ—¶å€™ï¼Œç»™è¯¥å‚æ•°å‰è¾¹æ·»åŠ 0å¹¶è¿”å›
  */
 function addZero(num) {
 	if (num < 10) {
@@ -8,8 +8,8 @@ function addZero(num) {
 	return num;
 }
 /**
- * ²ÎÊı£º¸ø¶¨µÄ¿ªÊ¼Ê±¼ä
- * ¼ÆËã³ö¸ÃÊ±¼äºÍµ±Ç°Ê±¼äÏà¸ôµÄÄêÊı£¬ÔÂÊıºÍÌìÊı
+ * å‚æ•°ï¼šç»™å®šçš„å¼€å§‹æ—¶é—´
+ * è®¡ç®—å‡ºè¯¥æ—¶é—´å’Œå½“å‰æ—¶é—´ç›¸éš”çš„å¹´æ•°ï¼Œæœˆæ•°å’Œå¤©æ•°
  */
 function timeElapseYearMonthDay(date){
 	var currentDate = Date();
@@ -19,9 +19,9 @@ function timeElapseYearMonthDay(date){
 	
 }
 /**
- * ²ÎÊı£º¸ø¶¨µÄÊ±¼ä 
- * ¸ø¶¨Ò»¸öÊ±¼ä£¬¼ÆËã´ËÊ±¼ä¾àÀëµ±Ç°Ê±¼äµÄÌìÊı£¬Ğ¡Ê±Êı£¬·ÖÖÓÊı£¬ÃëÊı²¢·µ»Ø×Ö·û´® 
- * ×Ö·û´®¸ñÊ½Îª£ºxxÌìxxĞ¡Ê±xx·ÖÖÓxxÃë
+ * å‚æ•°ï¼šç»™å®šçš„æ—¶é—´ 
+ * ç»™å®šä¸€ä¸ªæ—¶é—´ï¼Œè®¡ç®—æ­¤æ—¶é—´è·ç¦»å½“å‰æ—¶é—´çš„å¤©æ•°ï¼Œå°æ—¶æ•°ï¼Œåˆ†é’Ÿæ•°ï¼Œç§’æ•°å¹¶è¿”å›å­—ç¬¦ä¸² 
+ * å­—ç¬¦ä¸²æ ¼å¼ä¸ºï¼šxxå¤©xxå°æ—¶xxåˆ†é’Ÿxxç§’
  */
 function timeElapse(date) {
 	var current = Date();
@@ -36,15 +36,15 @@ function timeElapse(date) {
 	seconds = seconds % 60;
 	seconds = addZero(seconds);
 	var result = "<span class=\"digit\">" + days
-			+ "Ìì</span><span class=\"digit\">" + hours
-			+ "Ğ¡Ê±</span><span class=\"digit\">" + minutes
-			+ "·ÖÖÓ</span><span class=\"digit\">" + seconds + "Ãë</span>";
+			+ "å¤©</span><span class=\"digit\">" + hours
+			+ "å°æ—¶</span><span class=\"digit\">" + minutes
+			+ "åˆ†é’Ÿ</span><span class=\"digit\">" + seconds + "ç§’</span>";
 	return result;
 }
 
 /**
- * ²ÎÊı£º¸ø¶¨Ê±¼äµÄ×Ö·û´®£¬¸ñÊ½Îª£º1984-06-10 12:00:00
- * ·µ»Ø¸ø×Ö·û´®µÄÈÕÆÚ
+ * å‚æ•°ï¼šç»™å®šæ—¶é—´çš„å­—ç¬¦ä¸²ï¼Œæ ¼å¼ä¸ºï¼š1984-06-10 12:00:00
+ * è¿”å›ç»™å­—ç¬¦ä¸²çš„æ—¥æœŸ
  */
 function getDateFromString(timeString) {
 	var year = timeString.substr(0,4);

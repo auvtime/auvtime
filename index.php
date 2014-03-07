@@ -8,7 +8,7 @@
 	<script src="js/functions.js"></script>
 	<script src="js/lifeTime.js"></script>
 	<meta http-equiv="content-type" content="text/html; charset=gb2312" />
-	<title>¹âÒõ¹ÊÊÂ--auvtime.com</title>
+	<title>å…‰é˜´æ•…äº‹--auvtime.com</title>
 </head>
 <?php
 	$username="u199488573_auvt";
@@ -21,10 +21,10 @@
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	$pdo->exec("set names gbk");
 	
-	//Ö´ĞĞMySQLÓï¾ä
+	//æ‰§è¡ŒMySQLè¯­å¥
 	$sql = "SELECT * FROM auv_user";
-	$result=$pdo->query($sql) or die("Unable to query£¬". mysql_error());
-	//·µ»Ø¶àÉÙÌõ¼ÇÂ¼
+	$result=$pdo->query($sql) or die("Unable to queryï¼Œ". mysql_error());
+	//è¿”å›å¤šå°‘æ¡è®°å½•
 	$row=$result->fetch();
 	
 	$format = 'Y-m-d H:i:s';
@@ -61,26 +61,26 @@
 	   
 		$format = array();
 		if($interval->y !== 0) {
-			$format[] = "%yÄê";
+			$format[] = "%yå¹´";
 		}
 		if($interval->m !== 0) {
-			$format[] = "%m¸öÔÂ";
+			$format[] = "%mä¸ªæœˆ";
 		}
 		
 		if($interval->d !== 0) {
-			$format[] = "%dÌì";
+			$format[] = "%då¤©";
 		}
 		if($interval->h !== 0) {
-			$format[] = "%hĞ¡Ê±";
+			$format[] = "%hå°æ—¶";
 		}
 		if($interval->i !== 0) {
-			$format[] = "%i·ÖÖÓ";
+			$format[] = "%iåˆ†é’Ÿ";
 		}
 		if($interval->s !== 0) {
 			if(!count($format)) {
 				return "less than a minute ago";
 			} else {
-				$format[] = "%sÃë";
+				$format[] = "%sç§’";
 			}
 		}
 	   
@@ -110,9 +110,9 @@
 			    	</span>
 		    	</div>
 		    	<ul class="nav accountlinks">
-	                <li><span class="button dark orange">¿´¿´Äã</span></li>
+	                <li><span class="button dark orange">çœ‹çœ‹ä½ </span></li>
 	                <li class="signin">
-	                    <a class="nav-link stats-notrack" href="http://auvtime.com/login">µÇÂ¼</a>
+	                    <a class="nav-link stats-notrack" href="http://auvtime.com/login">ç™»å½•</a>
 	                </li>
 	            </ul>
 		    </div>
@@ -123,26 +123,26 @@
 					<div class="logo">
 						<img src="images/auvtime-logo.png">
 						<div class="companyNameAndWebsite">
-							<span class="auvtime companyName orange">¹âÒõ¹ÊÊÂ</span>
+							<span class="auvtime companyName orange">å…‰é˜´æ•…äº‹</span>
 							<a href="http://auvtime.com" class="auvtime website orange"><span>auvtime<font color="gray">.com</font></span></a>
 						</div>
 					</div>
 					<div class="name">
-						<span><?php echo $row[2].",ÄãµÄÕÊºÅÊÇ".$row[1].",ÄãµÄÉúÈÕÊÇ".$row[3];?></span>
+						<span><?php echo $row[2].",ä½ çš„å¸å·æ˜¯".$row[1].",ä½ çš„ç”Ÿæ—¥æ˜¯".$row[3];?></span>
 					</div>
 					<div class="lifeLength">
 						<script type="text/javascript">
-						//¼ÆËãÉúÈÕ¾àÀëµ±Ç°Ê±¼ä¾ßÌåĞÅÏ¢
+						//è®¡ç®—ç”Ÿæ—¥è·ç¦»å½“å‰æ—¶é—´å…·ä½“ä¿¡æ¯
 						setInterval(function() {
 							var birthday = <?php echo '"'.$birthdayTime->format($format).'"';?>;
 							var birthdayDate = getDateFromString(birthday);
 							var lifeLength = timeElapse(birthdayDate);
-							lifeLength = lifeLength + 'Ñ½£¡';
+							lifeLength = lifeLength + 'å‘€ï¼';
 							$('#lifeLengthContent').html(lifeLength);
 						},1000);
 						</script>
 						<div id="lifeLengthMonth">
-							<span>°¥ßÏÎ¹£¬Äã¶¼»îÕâÃ´³¤Ê±¼äÁË:<?php echo $lifeTime?>,ÄÇÊÇ</span>
+							<span>å“å‘¦å–‚ï¼Œä½ éƒ½æ´»è¿™ä¹ˆé•¿æ—¶é—´äº†:<?php echo $lifeTime?>,é‚£æ˜¯</span>
 							<span id="lifeLengthContent">
 							
 							</span>
